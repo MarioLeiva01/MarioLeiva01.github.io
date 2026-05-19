@@ -1,104 +1,462 @@
-<!-- 🔥 HEADER -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=200&section=header&text=Hell0,%20W0rdl&fontSize=40&fontColor=ffffff&animation=fadeIn" />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- ⚡ TYPING ANIMATION -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Ingeniero+de+Sistemas;Data+%2B+Full+Stack+Engineer;Construyendo+desarrollo+sostenible;Automatización+%7C+Pipelines+%7C+APIs" />
-</p>
+  <title>Wilmer Leiva | Full Stack Engineer</title>
 
-💻 **Ingeniero de Sistemas | Data & Full Stack Engineering | AI Enthusiast**
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-## 🎯 Sobre mí
-- 📊 **Data Science & Engineering:** Creación de pipelines ETL, validación de datos y automatización.
-- ⚙️ **AI Integration:** Desarrollo de soluciones impulsadas por Inteligencia Artificial de forma sostenible.
-- 🌐 **Arquitectura Full Stack:** Diseño de APIs RESTful, arquitecturas basadas en microservicios y QA.
-- 🤝 **Team Player:** Miembro asociado SOUL ("Web Site").
-- ⚡ **Meta 2026:** Posicionamiento SOUL y dominio de infraestructuras Cloud Native.
+    body{
+      font-family:'Inter',sans-serif;
+      background:#0b1120;
+      color:#ffffff;
+      overflow-x:hidden;
+    }
 
-## 🚀 Stack Tecnológico
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
-### 🧠 Lenguajes
-<div >
-  <img src="https://skillicons.dev/icons?i=python" height="40" title="Python" />
-  <img src="https://skillicons.dev/icons?i=java" height="40" title="Java" />
-  <img src="https://skillicons.dev/icons?i=javascript" height="40" title="JavaScript" />
-  <img src="https://skillicons.dev/icons?i=typescript" height="40" title="TypeScript" />
-</div>
+    .container{
+      width:min(1200px,90%);
+      margin:auto;
+    }
 
-<!-- Frameworks -->
-### 🌐 Frameworks
-<div >
-  <img src="https://skillicons.dev/icons?i=spring" height="40" title="Spring" />
-  <img src="https://skillicons.dev/icons?i=nextjs" height="40" title="NextJS" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="40" title="Node.js" />
-  <img src="https://skillicons.dev/icons?i=react" height="40" title="React" />
-  <img src="https://skillicons.dev/icons?i=flutter" height="40" title="Flutter" />
-  <img src="https://skillicons.dev/icons?i=angular" height="40" title="Angular" />
-  <img src="https://skillicons.dev/icons?i=tailwind" height="40" title="Tailwind CSS" />
-</div>
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+      background:
+      radial-gradient(circle at top left,#00f7ff33,transparent 25%),
+      radial-gradient(circle at bottom right,#7c3aed33,transparent 25%),
+      #0b1120;
+    }
 
-<!-- Bases de datos -->
-### 📊 Bases de datos
-<div >
-  <img src="https://skillicons.dev/icons?i=mysql" height="40" title="MySQL" />
-  <img src="https://skillicons.dev/icons?i=postgres" height="40" title="PostgreSQL" />
-</div>
+    .hero{
+      z-index:2;
+    }
 
+    .badge{
+      display:inline-block;
+      padding:10px 18px;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:999px;
+      margin-bottom:25px;
+      background:rgba(255,255,255,.03);
+      backdrop-filter:blur(10px);
+      font-size:14px;
+      color:#00f7ff;
+    }
 
-<!-- DevOps / Cloud -->
-### ☁️ DevOps y Control de versiones
-<div >
-  <img src="https://skillicons.dev/icons?i=docker" height="40" title="Docker" />
-  <img src="https://skillicons.dev/icons?i=azure" height="40" title="Azure" />
-   <img src="https://skillicons.dev/icons?i=git" height="40" title="Git" />
-  <img src="https://skillicons.dev/icons?i=github" height="40" title="GitHub" />
-<img src="https://skillicons.dev/icons?i=visualstudio" height="40" title="Visual Studio" />
-</div>
+    h1{
+      font-size:clamp(3rem,8vw,6rem);
+      line-height:1;
+      font-weight:700;
+      margin-bottom:20px;
+    }
 
+    .gradient{
+      background:linear-gradient(to right,#00f7ff,#7c3aed);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
 
-## 💡 Preguntame por
-- 🔁 Automatización de procesos (pipelines)
-- 🧠 Sistemas escalables impulsados con IA
+    .subtitle{
+      max-width:750px;
+      margin:auto;
+      font-size:1.2rem;
+      color:#94a3b8;
+      line-height:1.8;
+      margin-bottom:40px;
+    }
 
-🤝 Conectemos :
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
 
-![Profile Views](https://komarev.com/ghpvc/?username=MarioLeiva01&color=green)
-Discord Chanel: https://discord.gg/42EAnzyt2G
-📫 Email: wilmermleiva@hotmail.com
+    .btn{
+      padding:15px 28px;
+      border-radius:14px;
+      font-weight:600;
+      transition:.3s ease;
+    }
 
-<a href="https://discord.com/users/dmolight01">
-  <img src="https://cdn.simpleicons.org/discord/5865F2" width="40" />
-</a>
-<a href="https://tu-sitio.com">
-  <img src="https://skillicons.dev/icons?i=web" />
-</a>
-<a href="https://github.com/MarioLeiva01">
-  <img src="https://skillicons.dev/icons?i=github" />
-</a>
-<a href="https://linkedin.com/in/wilmermleiva">
-  <img src="https://skillicons.dev/icons?i=linkedin" />
-</a>
+    .btn-primary{
+      background:linear-gradient(to right,#00f7ff,#7c3aed);
+      color:white;
+    }
 
-<div align="center">
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MarioLeiva01&layout=compact&theme=tokyonight&hide_border=true&title_color=00F7FF" width="400" />
-</div>
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      opacity:.9;
+    }
 
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.03);
+    }
 
-<!--
-**MarioLeiva01/MarioLeiva01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    .btn-secondary:hover{
+      background:rgba(255,255,255,.08);
+    }
 
-Here are some ideas to get you started:
+    section{
+      padding:100px 0;
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    .section-title{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    .section-subtitle{
+      text-align:center;
+      color:#94a3b8;
+      margin-bottom:60px;
+    }
+
+    .grid{
+      display:grid;
+      gap:25px;
+    }
+
+    .skills{
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    }
+
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:30px;
+      border-radius:24px;
+      transition:.3s ease;
+      backdrop-filter:blur(12px);
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#00f7ff44;
+    }
+
+    .card h3{
+      margin-bottom:18px;
+      font-size:1.3rem;
+    }
+
+    .tech{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .tech span{
+      background:#111827;
+      padding:10px 14px;
+      border-radius:12px;
+      font-size:.9rem;
+      color:#cbd5e1;
+    }
+
+    .projects{
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    }
+
+    .project-card img{
+      width:100%;
+      border-radius:18px;
+      margin-bottom:20px;
+    }
+
+    .project-card p{
+      color:#94a3b8;
+      line-height:1.7;
+      margin:15px 0 20px;
+    }
+
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .social{
+      width:60px;
+      height:60px;
+      border-radius:18px;
+      background:rgba(255,255,255,.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:.3s;
+      border:1px solid rgba(255,255,255,.06);
+    }
+
+    .social:hover{
+      transform:translateY(-4px);
+      border-color:#00f7ff55;
+    }
+
+    footer{
+      padding:40px 0;
+      text-align:center;
+      color:#64748b;
+      border-top:1px solid rgba(255,255,255,.05);
+    }
+
+    @media(max-width:768px){
+
+      h1{
+        font-size:3.5rem;
+      }
+
+      .subtitle{
+        font-size:1rem;
+      }
+
+      .section-title{
+        font-size:2rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <header>
+
+    <div class="hero container">
+
+      <div class="badge">
+        🚀 Full Stack Engineer • Data Engineering • AI Systems
+      </div>
+
+      <h1>
+        Wilmer <span class="gradient">Leiva</span>
+      </h1>
+
+      <p class="subtitle">
+        Ingeniero de Sistemas especializado en automatización,
+        arquitecturas escalables, desarrollo Full Stack,
+        integración de Inteligencia Artificial y soluciones Cloud Native.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">
+          Ver Proyectos
+        </a>
+
+        <a href="https://github.com/MarioLeiva01" class="btn btn-secondary">
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ABOUT -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Sobre mí
+      </h2>
+
+      <p class="section-subtitle">
+        Construyendo soluciones modernas con ingeniería escalable y automatización inteligente.
+      </p>
+
+      <div class="grid skills">
+
+        <div class="card">
+          <h3>⚡ Full Stack</h3>
+
+          <div class="tech">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Spring</span>
+            <span>Angular</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📊 Data Engineering</h3>
+
+          <div class="tech">
+            <span>ETL</span>
+            <span>Pipelines</span>
+            <span>Automation</span>
+            <span>Validation</span>
+            <span>Analytics</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>☁️ Cloud & DevOps</h3>
+
+          <div class="tech">
+            <span>Docker</span>
+            <span>Azure</span>
+            <span>GitHub</span>
+            <span>CI/CD</span>
+            <span>Linux</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Proyectos
+      </h2>
+
+      <p class="section-subtitle">
+        Aplicaciones, APIs y automatizaciones desarrolladas.
+      </p>
+
+      <div class="grid projects">
+
+        <div class="card project-card">
+
+          <img src="https://picsum.photos/600/400?1" alt="project">
+
+          <h3>CRM Dashboard</h3>
+
+          <p>
+            Plataforma administrativa moderna con autenticación,
+            dashboards analíticos y arquitectura escalable.
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            Ver Proyecto
+          </a>
+
+        </div>
+
+        <div class="card project-card">
+
+          <img src="https://picsum.photos/600/400?2" alt="project">
+
+          <h3>Ecommerce Platform</h3>
+
+          <p>
+            Sistema ecommerce Full Stack con pagos,
+            APIs REST y administración de productos.
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            Ver Proyecto
+          </a>
+
+        </div>
+
+        <div class="card project-card">
+
+          <img src="https://picsum.photos/600/400?3" alt="project">
+
+          <h3>Automation Pipelines</h3>
+
+          <p>
+            Automatización de procesos empresariales y
+            validación de datos mediante pipelines inteligentes.
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            Ver Proyecto
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section>
+
+    <div class="container" style="text-align:center;">
+
+      <h2 class="section-title">
+        Conectemos
+      </h2>
+
+      <p class="section-subtitle">
+        Disponible para colaborar en proyectos tecnológicos y soluciones escalables.
+      </p>
+
+      <div class="socials">
+
+        <a class="social" href="https://github.com/MarioLeiva01">
+          🐙
+        </a>
+
+        <a class="social" href="https://linkedin.com/in/wilmermleiva">
+          💼
+        </a>
+
+        <a class="social" href="mailto:wilmermleiva@hotmail.com">
+          📧
+        </a>
+
+        <a class="social" href="https://discord.com/users/dmolight01">
+          💬
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+      © 2026 Wilmer Leiva • Full Stack Engineer
+    </div>
+
+  </footer>
+
+</body>
+</html>
